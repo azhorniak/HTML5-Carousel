@@ -77,7 +77,7 @@
       $lis = $ul.getElementsByTagName("li"),
       lis = $lis.length,
       getStyle  = function($elm,s){
-        return parseInt( window.getComputedStyle($elm,null).getPropertyValue(s) );
+        return parseInt( window.getComputedStyle($elm,null).getPropertyValue(s), 10 );
       },
       listwidth = getStyle($ul,"width") + getStyle($ul,"margin-right"),
       itemwidth = getStyle($lis[0],"width") + getStyle($lis[0],"margin-right"),
